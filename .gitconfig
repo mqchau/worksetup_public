@@ -41,5 +41,7 @@
 	rbsign = rebase --exec 'git commit --amend --no-edit -n -S' -i
 	vc = verify-commit
 	lsi = ls-files --ignored --exclude-standard --others
+	prom = pull --rebase origin master
+	from = fetch origin master
 [rebase]
 	autosquash = false
