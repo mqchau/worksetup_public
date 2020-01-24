@@ -1,0 +1,45 @@
+[rerere]
+	enabled = true
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/appfolio/.gitignore_global
+	editor = vim
+[user]
+	name = Quan Chau
+	email = quanqchau@gmail.com
+[alias]
+	st = status
+	stu = status -uno
+	lg = log  --max-count=20 --graph --decorate
+	co = checkout
+	br = branch
+	ci = commit
+	ph = push origin HEAD
+	cia = commit --amend
+	cian = commit --amend --no-edit
+	ap = add -p
+	lgo = log --decorate --oneline --graph master..HEAD
+	lgof = log --decorate --oneline --graph
+	cp = cherry-pick
+	rbi = rebase -i
+	rbc = rebase --continue
+	lgv = log --decorate --reverse
+	H = HEAD
+	rh = reset HEAD~1
+	cpc = cherry-pick --continue
+	cif = commit --fixup
+	rbia = rebase -i --autosquash
+	ss = show --stat
+	sha = rev-parse
+	shah = rev-parse HEAD
+	dc = diff --cached
+	ds = diff --stat
+	d = diff
+	stu = status -uno
+	pod = push origin --delete
+	rbsign = rebase --exec 'git commit --amend --no-edit -n -S' -i
+	vc = verify-commit
+	lsi = ls-files --ignored --exclude-standard --others
+[rebase]
+	autosquash = false

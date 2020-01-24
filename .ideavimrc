@@ -1,0 +1,8 @@
+" Enter to add empty line on bottom 
+nmap <CR> o<Esc>
+" Shift-Enter to break current line at the cursor and move to new line
+nmap <S-Enter> i<Enter><Esc>
+
+" relative line number
+set nu
+set relativenumber

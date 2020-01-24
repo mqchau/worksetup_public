@@ -1,0 +1,1 @@
+bash /usr/local/opt/solr4/bin/solr4 start -f -p 8988
