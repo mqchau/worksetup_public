@@ -45,6 +45,8 @@
 	vc = verify-commit
 	lsi = ls-files --ignored --exclude-standard --others
 	prom = pull --rebase origin master
-	from = fetch origin master
+	from = fetch --set-upstream origin master
+	f = fetch --set-upstream
+	fo = fetch --set-upstream origin
 [rebase]
 	autosquash = false
