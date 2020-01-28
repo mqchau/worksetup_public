@@ -1,5 +1,7 @@
 [rerere]
 	enabled = true
+[init]
+	templatedir = /Users/appfolio/.git_templates
 [push]
 	default = simple
 [core]
@@ -7,7 +9,8 @@
 	editor = vim
 [user]
 	name = Quan Chau
-	email = quanqchau@gmail.com
+	email = quan.chau@appfolio.com
+	signingkey = 288ED7EDC350AFF1
 [alias]
 	st = status
 	stu = status -uno
@@ -15,7 +18,7 @@
 	co = checkout
 	br = branch
 	ci = commit
-	ph = push origin HEAD
+	ph = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	cia = commit --amend
 	cian = commit --amend --no-edit
 	ap = add -p
