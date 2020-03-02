@@ -32,6 +32,10 @@ TERMINALS = [
     'label'   => "[engine bash 2]",
     'command' => "cd #{RAILS_ROOT}/engines/reports",
   },
+  {
+    'label'   => "[webpack app 1]",
+    'command' => "cd #{RAILS_ROOT}/app/javascript/late_fee_policies",
+  },
 ]
 
 class ProjectLauncherITerm
