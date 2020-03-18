@@ -48,6 +48,7 @@ alias inslint="eslint --fix --quiet app/javascript test/javascript"
 alias gvim="/Applications/MacVim.app/Contents/bin/gvim"
 alias eslf="./node_modules/.bin/eslint --fix"
 alias purge_assets='brake assets:clean assets:clobber && g clean -fdX tmp'
+alias fs="foreman start"
 
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
