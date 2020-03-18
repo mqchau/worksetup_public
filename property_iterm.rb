@@ -1,24 +1,24 @@
 require 'rubygems'
 require 'yaml'
 
-RAILS_ROOT  = '/Users/appfolio/property'
+RAILS_ROOT  = '/Users/appfolio/src/apm_bundle/apps/property'
 
 TERMINALS = [
   {
     'label'   => "[multiplexer]",
-    'command' => "cd #{RAILS_ROOT} && export MULTIPLEXER_MAX_REQUESTS=2 MULTIPLEXER_URL=http://127.0.0.1:3000 && bundle exec multiplexer_ctl run",
+    'command' => "export MULTIPLEXER_MAX_REQUESTS=2 MULTIPLEXER_URL=http://127.0.0.1:3000 && bundle exec multiplexer_ctl run",
   },
   {
     'label'   => "[webpack]",
-    'command' => "cd #{RAILS_ROOT} && node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --watch --config config/webpack/development.js",
+    'command' => "node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --watch --config config/webpack/development.js",
   },
   {
     'label'   => "[rails s]",
-    'command' => "cd #{RAILS_ROOT} && bundle exec bin/rails s -p 3000",
+    'command' => "bundle exec bin/rails s -p 3000",
   },
   {
     'label'   => "[rails c]",
-    'command' => "cd #{RAILS_ROOT} && bundle exec bin/rails c",
+    'command' => "bundle exec bin/rails c",
   },
   {
     'label'   => "[property bash]",
