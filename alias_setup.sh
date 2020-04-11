@@ -30,7 +30,7 @@ alias gst='git status'
 alias gtemp='git branch -D temp_branch; git branch temp_branch'
 alias dbre='brake db:drop db:create db:migrate'
 alias grepc='grep --color -n'
-alias selenium='find test/dummy/test/selenium -name '*test.rb' -exec ruby -Itest {} \;'
+alias selenium="find test/dummy/test/selenium -name '*test.rb' -exec ruby -Itest {} \;"
 alias tl='test_launcher --spring'
 alias tld='test_launcher --disable-spring'
 alias nt='NODE_ENV=test'
