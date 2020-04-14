@@ -50,6 +50,9 @@ alias eslf="./node_modules/.bin/eslint --fix"
 alias purge_assets='brake assets:clean assets:clobber && g clean -fdX tmp'
 alias fs="foreman start"
 
+alias ti="terraform init"
+alias tp="terraform plan"
+
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
 OS=$(uname -a)
