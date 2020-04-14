@@ -52,6 +52,7 @@ alias fs="foreman start"
 
 alias ti="terraform init"
 alias tp="terraform plan"
+alias ta="terraform apply"
 
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
