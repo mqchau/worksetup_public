@@ -105,3 +105,6 @@ source ~/worksetup_public/alias_setup.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# set colr or .zshrc
+export LS_COLORS="di=1;36"
