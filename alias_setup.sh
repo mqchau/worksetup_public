@@ -54,6 +54,8 @@ alias ti="terraform init"
 alias tp="terraform plan"
 alias ta="terraform apply"
 
+alias au="aws_longer role SuperUser"
+
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
 OS=$(uname -a)
