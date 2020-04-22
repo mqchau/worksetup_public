@@ -23,7 +23,7 @@
 	cia = commit --amend
 	cian = commit --amend --no-edit
 	ap = add -p
-	lgo = log --decorate --oneline --graph master..HEAD
+	lgo = "!git --no-pager log --decorate --oneline --graph master..HEAD"
 	lgof = log --decorate --oneline --graph
 	cp = cherry-pick
 	rbi = rebase -i
