@@ -16,7 +16,6 @@ alias stc='pushd ~/src/credit_card_system/cashier_app; script/start; popd'
 alias spc='pushd ~/src/credit_card_system/cashier_app; script/stop; popd'
 alias brake='bundle exec rake'
 alias rtest='bundle exec ruby -Itest'
-alias rtest='bundle exec spring rails test'
 alias ret='RAILS_ENV=test'
 alias hgrep='history | grep'
 alias syncapp='bundle install && brake db:migrate && ret brake db:migrate && npm install'
@@ -79,3 +78,9 @@ alias dockernotary="notary -s https://notary.docker.io -d ~/.docker/trust"
 
 # workbench on cloud
 alias sshbench='ssh ubuntu@ec2-3-81-202-211.compute-1.amazonaws.com'
+
+# spring related commands
+alias stest='RAILS_ENV=test bin/spring rails test'
+alias estest='
+SPRING_APPLICATION_ID=property_${PWD##*/}_engine ../../bin/spring rails test'
+alias kills='pkill -f spring'
