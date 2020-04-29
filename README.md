@@ -4,7 +4,7 @@ Run all the following command from this repo directory
 ## Neovim
 1. Install Neovim
 
-    For ubuntu: `sudo apt-get install neovim`
+    For centos: `sudo yum install -y neovim`
 
     For MacOS: `brew install neovim`
 1. Link the neovim setting and .vimrc
@@ -37,3 +37,10 @@ Download latest vimr release from https://github.com/qvacua/vimr/releases and co
 ## git alias
 
 `bash $PWD/git_alias_setup.sh`
+
+## Zsh and Oh My Zsh
+
+`sudo yum install -y zsh`
+`sudo chsh -s /bin/zsh centos`
+`wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh`
+`cd $HOME && rm .zshrc && ln -s $HOME/worksetup_public/.zshrc`
