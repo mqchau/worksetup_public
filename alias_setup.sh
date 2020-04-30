@@ -77,9 +77,6 @@ alias rmgit='rm /Users/appfolio/src/apm_bundle/.git/index.lock'
 # docker notary
 alias dockernotary="notary -s https://notary.docker.io -d ~/.docker/trust"
 
-# workbench on cloud
-alias sshbench='ssh ubuntu@ec2-3-81-202-211.compute-1.amazonaws.com'
-
 # spring related commands
 alias stest='RAILS_ENV=test bin/spring rails test'
 alias estest='
