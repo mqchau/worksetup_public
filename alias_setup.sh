@@ -55,6 +55,7 @@ alias tp="terraform plan"
 alias ta="terraform apply"
 
 alias au="aws_longer role SuperUser"
+alias aws_current_user="aws sts get-caller-identity"
 
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
