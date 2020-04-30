@@ -1,6 +1,9 @@
 # NOTE: on the remote machine, you must edit sshd_config to make this work
 #   sudo vi /etc/ssh/sshd_config
 #   Add "AcceptEnv AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN" near other AcceptEnv
+#
+# To re-use ssh agent on remote machine, so you can perform git fetch/push commands,
+# add "ForwardAgent yes" to your ssh config ~/.ssh/config
 
 # USAGE: bash ssh_with_credentials.sh <user@host>
 
