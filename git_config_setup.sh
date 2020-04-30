@@ -1,3 +1,4 @@
+# ALIAS
 git config --global alias.st 'status'
 git config --global alias.lg 'log  --max-count=20 --graph --decorate'
 git config --global alias.co 'checkout'
@@ -32,4 +33,13 @@ git config --global alias.lsi 'ls-files --ignored --exclude-standard --others'
 git config --global alias.prom 'pull --rebase origin master'
 git config --global alias.from 'fetch origin master'
 
+# OTHER
 git config --global remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+
+git config --global core.excludesfile $PWD/.gitignore_global
+git config --global core.editor vim
+git config --global core.pager less
+
+git config --global rebase.autosquash false
+git config --global pager.branch false
+git config --global rerere.enabled true
