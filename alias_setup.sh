@@ -43,6 +43,8 @@ alias ti="terraform init"
 alias tp="terraform plan"
 alias ta="terraform apply"
 
+alias java11="export PATH=\"/usr/local/opt/openjdk@11/bin:$PATH\""
+
 alias au="aws_longer role SuperUser"
 alias aws_current_user="aws sts get-caller-identity"
 
