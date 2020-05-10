@@ -1,6 +1,3 @@
-alias glgm="bash ~/worksetup/git_log_master.sh"
-alias glgmh="bash ~/worksetup/git_log_master.sh HEAD"
-alias glg='git log --graph --decorate'
 alias g='git'
 alias jsh='find app/assets/javascripts -name "*.js" -exec jshint {} \;'
 alias rt='rake test'
@@ -21,15 +18,8 @@ alias hgrep='history | grep'
 alias syncapp='bundle install && brake db:migrate && ret brake db:migrate && npm install'
 alias pr='cd `git rev-parse --show-toplevel`; pronto run; cd - > /dev/null;'
 alias resolr='bundle exec rake solr:create_core solr:reindex'
-alias gco='git checkout'
-alias gpo='git pull origin'
-alias gfo='git fetch origin'
-alias gmo='git merge origin'
 alias dbm='bundle exec rake db:migrate'
-alias gst='git status'
-alias gtemp='git branch -D temp_branch; git branch temp_branch'
 alias dbre='brake db:drop db:create db:migrate'
-alias grepc='grep --color -n'
 alias selenium="find test/dummy/test/selenium -name '*test.rb' -exec ruby -Itest {} \;"
 alias tl='test_launcher --spring'
 alias tld='test_launcher --disable-spring'
@@ -45,7 +35,6 @@ alias rs="RAILS_ENV=test bundle exec rspec --format documentation"
 alias ddec="export DISABLE_DATABASE_ENVIRONMENT_CHECK=1"
 alias insnpt="./node_modules/.bin/mocha --recursive --timeout 10000 --require babel-core/register --require ignore-styles --require ./test/javascript/shim.js --require ./test/javascript/setup.js"
 alias inslint="eslint --fix --quiet app/javascript test/javascript"
-alias gvim="/Applications/MacVim.app/Contents/bin/gvim"
 alias eslf="./node_modules/.bin/eslint --fix"
 alias purge_assets='brake assets:clean assets:clobber && g clean -fdX tmp'
 alias fs="foreman start"
