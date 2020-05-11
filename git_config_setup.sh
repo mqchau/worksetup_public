@@ -34,8 +34,6 @@ git config --global alias.prom 'pull --rebase origin master'
 git config --global alias.from 'fetch origin master'
 
 # OTHER
-git config --global remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-
 git config --global core.excludesfile $PWD/.gitignore_global
 git config --global core.editor vim
 git config --global core.pager less
