@@ -43,7 +43,7 @@ alias ti="terraform init"
 alias tp="terraform plan"
 alias ta="terraform apply"
 
-alias java11="export PATH=\"/usr/local/opt/openjdk@11/bin:$PATH\""
+alias java11="export PATH=\"/usr/local/opt/openjdk@11/bin:$PATH\" JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.7+10"
 
 alias au="aws_longer role SuperUser"
 alias aws_current_user="aws sts get-caller-identity"
