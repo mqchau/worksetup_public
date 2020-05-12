@@ -41,3 +41,6 @@ git config --global core.pager less
 git config --global rebase.autosquash false
 git config --global pager.branch false
 git config --global rerere.enabled true
+
+# DO NOT SHOW DIRTY FILE ON ZSH
+git config --global oh-my-zsh.hide-dirty 1
