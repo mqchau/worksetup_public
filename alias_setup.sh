@@ -1,4 +1,4 @@
-alias g='git'
+alias g='noglob git'
 alias jsh='find app/assets/javascripts -name "*.js" -exec jshint {} \;'
 alias rt='rake test'
 alias bi='bundle install'
