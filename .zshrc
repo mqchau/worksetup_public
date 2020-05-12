@@ -108,3 +108,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # set colr or .zshrc
 export LS_COLORS="di=1;36"
+
+# disable EXECJS
+EXECJS_RUNTIME='Disabled'
