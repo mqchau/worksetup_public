@@ -109,5 +109,6 @@ export NVM_DIR="$HOME/.nvm"
 # set colr or .zshrc
 export LS_COLORS="di=1;36"
 
-# disable EXECJS
-EXECJS_RUNTIME='Disabled'
+# For GPG to work on macos
+export GPG_TTY=$(tty)
+
