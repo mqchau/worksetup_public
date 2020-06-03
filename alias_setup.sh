@@ -73,3 +73,6 @@ alias stest='RAILS_ENV=test bin/spring rails test'
 alias estest='
 SPRING_APPLICATION_ID=property_${PWD##*/}_engine ../../bin/spring rails test'
 alias kills='pkill -f spring'
+
+# work related
+alias fullwebpack='bundle exec rake webpacker:npm_dev_install && node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --config config/webpack/development.js'
