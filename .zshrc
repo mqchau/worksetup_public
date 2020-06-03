@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-export PATH="$HOME/Library/Python/3.7/bin:$HOME/.local/bin:$HOME/bin:${PATH}"
+export PATH="/usr/local/opt/grep/libexec/gnubin:$HOME/Library/Python/3.7/bin:$HOME/.local/bin:$HOME/bin:${PATH}"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

@@ -44,3 +44,7 @@ Download latest vimr release from https://github.com/qvacua/vimr/releases and co
 `sudo chsh -s /bin/zsh centos`
 `wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh`
 `cd $HOME && rm .zshrc && ln -s $HOME/worksetup_public/.zshrc`
+
+## For MacOS:
+
+`brew install grep` for GNU grep instead of BSD grep
