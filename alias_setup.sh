@@ -46,7 +46,7 @@ alias ta="terraform apply"
 alias java11="export PATH=\"/usr/local/opt/openjdk@11/bin:$PATH\" JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.7+10"
 
 alias au="aws_longer role SuperUser"
-alias aws_current_user="aws sts get-caller-identity"
+alias aws_current_user='aws sts get-caller-identity > /tmp/current_user.json && cat /tmp/current_user.json && jq .Arn /tmp/current_user.json | grep -Po "(\d{12})" > /tmp/current_user && grep $(cat /tmp/current_user) ~/.aws/accounts'
 
 # set up alias for Mac OS only
 MacOsRegex='^Darwin'
