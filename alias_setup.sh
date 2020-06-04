@@ -76,3 +76,4 @@ alias kills='pkill -f spring'
 
 # work related
 alias fullwebpack='bundle exec rake webpacker:npm_dev_install && node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --config config/webpack/development.js'
+alias jumpboxssh="BUNDLE_GEMFILE=$HOME/worksetup_public/find_and_ssh_via_jumpbox/Gemfile bundle exec ruby $HOME/worksetup_public/find_and_ssh_via_jumpbox/jumpbox_ssh_automatic.rb"
