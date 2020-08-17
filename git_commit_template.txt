@@ -1,0 +1,8 @@
+MESSAGE MUST BE REPLACED
+
+# Co-authored-by: Darren Eng <darren.eng@appfolio.com>
+# Co-authored-by: Fannie Yu <fannie.yu@appfolio.com>
+# Co-authored-by: Connie Du <connie.du@appfolio.com>
+# Co-authored-by: Paul Mayzeles <paul-daniel.mayzeles@appfolio.com>
+# Co-authored-by: Mai Truong <mai.truong@appfolio.com>
+# Co-authored-by: Sebastian Kapfer <sebastian.kapfer@appfolio.com>

@@ -44,3 +44,5 @@ git config --global rerere.enabled true
 
 # DO NOT SHOW DIRTY FILE ON ZSH
 git config --global oh-my-zsh.hide-dirty 1
+
+git config --global commit.template $PWD/git_commit_template.txt
