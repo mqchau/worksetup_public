@@ -1,0 +1,9 @@
+`brew install mysql@5.7`
+
+Edit file /usr/local/opt/mysql@5.7/homebrew.mxcl.mysql@5.7.plist to point to new datadir. I suggest to change /usr/local/var/mysql -> /usr/local/var/mysql57
+Also add another argument after data dir `<string>--port=3307</string>`
+
+Initialize datadir
+`/usr/local/opt/mysql@5.7/bin/mysqld --datadir=/usr/local/var/mysql57 --port=3307 --initialize-insecure`
+
+Debug server start error: /usr/local/var/mysql57/<machine id>.err
