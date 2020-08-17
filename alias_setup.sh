@@ -70,8 +70,7 @@ alias dockernotary="notary -s https://notary.docker.io -d ~/.docker/trust"
 
 # spring related commands
 alias stest='RAILS_ENV=test bin/spring rails test'
-alias estest='
-SPRING_APPLICATION_ID=property_${PWD##*/}_engine ../../bin/spring rails test'
+alias estest='SPRING_APPLICATION_ID=property_${PWD##*/}_engine ../../bin/spring rails test'
 alias kills='pkill -f spring'
 
 # work related
