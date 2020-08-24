@@ -1,7 +1,7 @@
 alias g='noglob git'
 alias jsh='find app/assets/javascripts -name "*.js" -exec jshint {} \;'
 alias rt='rake test'
-alias bi='bundle install'
+alias bi='bundle install -j 4'
 alias guard='rvm 2.3.0 do guard'
 alias stp='pushd ~/property; script/start; popd'
 alias spp='pushd ~/property; script/stop; popd'
