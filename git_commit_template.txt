@@ -1,5 +1,8 @@
 MESSAGE MUST BE REPLACED
 
+# Co-authored-by: Nicholas Lee <nicholas.lee@appfolio.com>
+# Co-authored-by: Mickie Hsu <mickie.hsu@appfolio.com>
+# Co-authored-by: Eric Wen <eric.wen@appfolio.com>
 # Co-authored-by: Darren Eng <darren.eng@appfolio.com>
 # Co-authored-by: Fannie Yu <fannie.yu@appfolio.com>
 # Co-authored-by: Connie Du <connie.du@appfolio.com>
