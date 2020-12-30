@@ -32,6 +32,7 @@ alias ngrep="grep -nr --color --exclude-dir='node_modules' --exclude-dir='.git' 
 alias rr="RAILS_ENV=test bundle exec rspec && bundle exec rubocop"
 alias rubo="bundle exec rubocop"
 alias rs="RAILS_ENV=test bundle exec rspec --format documentation"
+alias srs="RAILS_ENV=test bundle exec spring rspec --format documentation"
 alias ddec="export DISABLE_DATABASE_ENVIRONMENT_CHECK=1"
 alias insnpt="./node_modules/.bin/mocha --recursive --timeout 10000 --require babel-core/register --require ignore-styles --require ./test/javascript/shim.js --require ./test/javascript/setup.js"
 alias inslint="eslint --fix --quiet app/javascript test/javascript"
@@ -42,6 +43,10 @@ alias fs="foreman start"
 alias ti="terraform init"
 alias tp="terraform plan"
 alias ta="terraform apply"
+
+alias rc="bundle exec rails c"
+alias pass="bundle exec passenger start --port 3000 --max-pool-size 4 --min-instances 4 --spawn-method direct --nginx-config-template nginx_development.conf.erb"
+alias localsearch="SEARCH_APP_API_URL=http://localhost:6311/api"
 
 alias java11="export PATH=\"/usr/local/opt/openjdk@11/bin:$PATH\" JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.7+10"
 
