@@ -154,3 +154,6 @@ endfunc
 noremap <leader>h :call HashRocketSyntaxConversion()<CR>
 
 let g:ctrlp_custom_ignore = 'node_modules'
+
+"NERDTree show hidden files
+let NERDTreeShowHidden=1
