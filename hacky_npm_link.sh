@@ -16,6 +16,7 @@ cd node_modules/$TARGET_DIRECTORY && \
   # hard link all files at dist folder of $SOURCE_DIRECTORY
   mkdir -p dist && pushd dist && \
   find $SOURCE_DIRECTORY/dist -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \; && popd && \
-  # hard link all files at es folder of $SOURCE_DIRECTORY
+  # hard link all files & symbolic link all folders at es folder of $SOURCE_DIRECTORY
   mkdir -p es && pushd es && \
-  find $SOURCE_DIRECTORY/es -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \; && popd
+  find $SOURCE_DIRECTORY/es -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \; && \
+  find $SOURCE_DIRECTORY/es -maxdepth 1 -mindepth 1 -type d -not -name ".*" -exec ln -s {} \; && popd
