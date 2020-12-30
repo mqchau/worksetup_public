@@ -15,4 +15,7 @@ cd node_modules/$TARGET_DIRECTORY && \
   find $SOURCE_DIRECTORY -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \; && \
   # hard link all files at dist folder of $SOURCE_DIRECTORY
   mkdir -p dist && cd dist && \
-  find $SOURCE_DIRECTORY/dist -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \;
+  find $SOURCE_DIRECTORY/dist -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \; && \
+  # hard link all files at es folder of $SOURCE_DIRECTORY
+  mkdir -p es && cd es && \
+  find $SOURCE_DIRECTORY/es -maxdepth 1 -mindepth 1 -type f -not -name ".*" -exec ln {} \;
