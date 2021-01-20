@@ -82,3 +82,9 @@ alias kills='pkill -f spring'
 # work related
 alias fullwebpack='bundle exec rake webpacker:npm_dev_install && node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --config config/webpack/development.js'
 alias jumpboxssh="BUNDLE_GEMFILE=$HOME/worksetup_public/find_and_ssh_via_jumpbox/Gemfile bundle exec ruby $HOME/worksetup_public/find_and_ssh_via_jumpbox/jumpbox_ssh_automatic.rb"
+
+# operations on git diff files only
+alias gdiff="git diff-tree -r --no-commit-id --name-only master head | xargs -I % echo \$(git rev-parse --show-toplevel)/%"
+alias rubodiff="rubo \$(gdiff)"
+alias rsdiff="bundle exec spring rspec \$(gdiff | grep _spec\.rb)"
+alias tdiff="gdiff | grep _test\.rb"
