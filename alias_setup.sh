@@ -88,3 +88,4 @@ alias gdiff="git diff-tree -r --no-commit-id --name-only master head | xargs -I 
 alias rubodiff="rubo \$(gdiff)"
 alias rsdiff="bundle exec spring rspec \$(gdiff | grep _spec\.rb)"
 alias tdiff="gdiff | grep _test\.rb"
+alias tldiff="tl \$(tdiff)"
