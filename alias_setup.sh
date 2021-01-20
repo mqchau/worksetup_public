@@ -84,7 +84,7 @@ alias fullwebpack='bundle exec rake webpacker:npm_dev_install && node --max_old_
 alias jumpboxssh="BUNDLE_GEMFILE=$HOME/worksetup_public/find_and_ssh_via_jumpbox/Gemfile bundle exec ruby $HOME/worksetup_public/find_and_ssh_via_jumpbox/jumpbox_ssh_automatic.rb"
 
 # operations on git diff files only
-alias gdiff="git diff-tree -r --no-commit-id --name-only master head | xargs -I % echo \$(git rev-parse --show-toplevel)/%"
+alias gdiff="git diff -r --no-commit-id --name-only master | xargs -I % echo \$(git rev-parse --show-toplevel)/%"
 alias rubodiff="rubo \$(gdiff)"
 alias rsdiff="bundle exec spring rspec \$(gdiff | grep _spec\.rb)"
 alias tdiff="gdiff | grep _test\.rb"
