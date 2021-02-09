@@ -62,6 +62,7 @@ if [[ $OS =~ $MacOsRegex ]]
 then
   alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 fi
+alias noise="say 'done'"
 
 # old vim vs nvim
 alias oldvim='/usr/bin/vim'
