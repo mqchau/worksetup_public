@@ -18,7 +18,7 @@ alias hgrep='history | grep'
 alias syncapp='bundle install && brake db:migrate && ret brake db:migrate && npm install'
 alias pr='pry-remote'
 alias resolr='bundle exec rake solr:create_core solr:reindex'
-alias dbm='bundle exec rake db:migrate'
+alias dbm='bundle exec rake db:create db:migrate'
 alias dbme='find engines -type d -maxdepth 1 ! -name engines | xargs -I % sh -c "pushd % && RAILS_ENV=test bundle exec rake db:create db:migrate"'
 alias dbre='brake db:drop db:create db:migrate'
 alias selenium="find test/dummy/test/selenium -name '*test.rb' -exec ruby -Itest {} \;"
