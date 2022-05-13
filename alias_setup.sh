@@ -15,7 +15,7 @@ alias brake='bundle exec rake'
 alias rtest='bundle exec ruby -Itest'
 alias ret='RAILS_ENV=test'
 alias hgrep='history | grep'
-alias syncapp='bundle install && brake db:migrate && ret brake db:migrate && npm install'
+alias syncapp='bundle install && brake db:migrate && ret brake db:migrate && yarn install'
 alias pr='pry-remote'
 alias resolr='bundle exec rake solr:create_core solr:reindex'
 alias dbm='bundle exec rake db:create db:migrate'
@@ -30,7 +30,7 @@ alias lseq='./node_modules/.bin/sequelize'
 alias npt='npm test'
 alias npd='npm run dist'
 alias npti='npm test -- --inspect --debug-brk'
-alias ngrep="grep -nr --color --exclude-dir='node_modules' --exclude-dir='.git' --exclude-dir='docs' --exclude='bundle.js'"
+alias ngrep="grep -nr --color --exclude-dir='coverage' --exclude-dir='tmp' --exclude-dir='node_modules' --exclude-dir='.git' --exclude-dir='docs' --exclude='bundle.js' --exclude-dir='es' --exclude-dir='dist' --exclude-dir='lib'"
 alias rr="RAILS_ENV=test bundle exec rspec && bundle exec rubocop"
 alias rubo="bundle exec rubocop"
 alias rs="RAILS_ENV=test bundle exec rspec --format documentation"
@@ -83,12 +83,27 @@ alias esstop='SPRING_APPLICATION_ID=property_${PWD##*/}_engine ../../bin/spring 
 alias kills='pkill -f spring'
 
 # work related
-alias fullwebpack='bundle exec rake webpacker:npm_dev_install && node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --config config/webpack/development.js'
+alias fullwebpack='node --max_old_space_size=4096 ./node_modules/.bin/webpack --progress --config config/webpack/development.js'
 alias jumpboxssh="BUNDLE_GEMFILE=$HOME/worksetup_public/find_and_ssh_via_jumpbox/Gemfile bundle exec ruby $HOME/worksetup_public/find_and_ssh_via_jumpbox/jumpbox_ssh_automatic.rb"
+alias fullsync='git prom && syncapp && fullwebpack; noise'
 
 # operations on git diff files only
 alias gdiff="git diff -r --no-commit-id --name-only --diff-filter=d master | xargs -I % echo \$(git rev-parse --show-toplevel)/%"
-alias rubodiff="rubo \$(gdiff)"
+alias rubodiff="rubo \$(gdiff | grep -v -e .yml -e Gemfile.lock | grep .rb)"
 alias rsdiff="bundle exec spring rspec \$(gdiff | grep _spec\.rb)"
 alias tdiff="gdiff | grep _test\.rb"
 alias tldiff="tl \$(tdiff)"
+
+# start docker machine automatically on docker command
+# alias docker='{docker-machine ls | grep -q Stopped && docker-machine start default } ; eval "$(docker-machine env default)" ; alias docker="/usr/local/bin/docker" ; docker "$@"'
+
+# popular cd
+alias cdprop='cd $HOME/src/apm_bundle/apps/property'
+
+# kubectl
+alias ka='kubectl afshell'
+alias kap='kubectl afshell --app property'
+
+# undo aliases from git plugin of oh my zsh
+unalias gstu
+unalias gsta
